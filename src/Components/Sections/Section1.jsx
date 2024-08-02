@@ -23,7 +23,7 @@ const Section1 = () => {
           Buy FREE through <span>GUMROAD</span>
         </button>
         <div className="font-roboto text-gray-600 bg-slate-100 text-xs px-5 py-5 italic border-s-4 border-orange-300 mb-8 ">
-          {page == 1 && (
+          {page === 1 && (
             <p>
               "Excellent revision tool, specially when you have an interview
               coming up in 15 days or so. It's so hard to find everything in one
@@ -31,7 +31,7 @@ const Section1 = () => {
             </p>
           )}
 
-          {page == 2 && (
+          {page ===2 && (
             <p>
               "Highly recommended if you're interviewing or preparing these days
               - this guide will help you revise concepts and practice things
@@ -39,7 +39,7 @@ const Section1 = () => {
             </p>
           )}
 
-          {page == 3 && (
+          {page === 3 && (
             <p>
               "Awesome! Love how the concepts are explained + all the wonderful
               resources mentioned. Having everything in one guide is super
@@ -49,16 +49,16 @@ const Section1 = () => {
         </div>
         <div className="flex flex-row justify-center text-md gap-2">
           <button className="" onClick={() => setPage(1)}>
-             {(page==1) && <TiMediaRecord/>}
-             {(page!=1) && <TiMediaRecordOutline />}
+             {(page===1) && <TiMediaRecord/>}
+             {(page!==1) && <TiMediaRecordOutline />}
           </button>
           <button onClick={() => setPage(2)}>
-             {(page==2) && <TiMediaRecord/>}
-             {(page!=2) && <TiMediaRecordOutline />}
+             {(page===2) && <TiMediaRecord/>}
+             {(page!==2) && <TiMediaRecordOutline />}
           </button>
           <button onClick={() => setPage(3)}>
-             {(page==3) && <TiMediaRecord/>}
-             {(page!=3) && <TiMediaRecordOutline />}
+             {(page===3) && <TiMediaRecord/>}
+             {(page!==3) && <TiMediaRecordOutline />}
           </button>
         </div>
       </div>
